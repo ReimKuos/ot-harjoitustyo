@@ -1,5 +1,8 @@
-# I tought headers were yesterday <1>
+# Ohjelmistotekniikka, harjoitustyö
 
-__Reading this is mandatory__
+# Tehtävät\n
+
+__Viikko 1__
+
 *some words might look tilted if viewed from a straight angle*
 but it otherwise should be straight
