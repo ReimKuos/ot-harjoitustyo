@@ -1,0 +1,112 @@
+commit 86d399ea5dc2e32d2cdf9111a12a56473f439fa3
+Author: Reima Kuomanen <reimkuos@gmail.com>
+Date:   Sat Mar 20 21:41:26 2021 +0200
+
+    "tiedostoja muokattu kansiossa tiedostoja"
+
+ tiedostoja/file2             | 0
+ tiedostoja/{file1 => file22} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 686f193fa967643d32c2262147bd0582f1bcb890
+Author: Reima Kuomanen <reimkuos@gmail.com>
+Date:   Sat Mar 20 21:29:58 2021 +0200
+
+    lisätty hakemisto "tiedostoja"
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit b27ca7503f36e01306998653ac14bd26e68d8b2a
+Author: Reima Kuomanen <reimkuos@gmail.com>
+Date:   Sat Mar 20 21:05:40 2021 +0200
+
+    tiedostoja muokattu (ei kerro paljoa)
+
+ eka.txt    | 6 +++---
+ kolmas.txt | 2 ++
+ 2 files changed, 5 insertions(+), 3 deletions(-)
+
+commit 4b26d0de1d0466d69fc12785fee1e21d88cccb27
+Author: Reima Kuomanen <reimkuos@gmail.com>
+Date:   Sat Mar 20 20:58:06 2021 +0200
+
+    ?
+
+ tiedosto.txt | 21 ---------------------
+ 1 file changed, 21 deletions(-)
+
+commit e4a3081d50ce6850cc55439ee6bdfd0c3ca9496e
+Author: Reima Kuomanen <reimkuos@gmail.com>
+Date:   Sat Mar 20 20:57:14 2021 +0200
+
+    tiedoston tiedosto.txt nimeksi muutettu eka.txt
+
+ eka.txt | 21 +++++++++++++++++++++
+ 1 file changed, 21 insertions(+)
+
+commit 6f3853a27fae497ff2ba227ab2b261f909456883
+Author: Reima Kuomanen <reimkuos@gmail.com>
+Date:   Sat Mar 20 20:55:04 2021 +0200
+
+    toinen.txt poistettu
+
+ toinen.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit a76f828bbd5511c863a0c6cc86f27223dd4db365
+Author: Reima Kuomanen <reimkuos@gmail.com>
+Date:   Sat Mar 20 20:50:33 2021 +0200
+
+    tiedoston tiedosto.txt tekstiä muokattu
+
+ tiedosto.txt | 8 +++-----
+ 1 file changed, 3 insertions(+), 5 deletions(-)
+
+commit 0c13c6c67d249c365d77210053e64f8b6ccbcf84
+Author: Reima Kuomanen <reimkuos@gmail.com>
+Date:   Sat Mar 20 20:47:43 2021 +0200
+
+    Tekstiä lisätty tiedostoon tiedosto.txt
+
+ tiedosto.txt | 21 +++++++++++++++++++++
+ 1 file changed, 21 insertions(+)
+
+commit aaf84de2396f369547d7879fa451cf96ac5ebc86
+Author: Reima Kuomanen <reimkuos@gmail.com>
+Date:   Sat Mar 20 19:15:06 2021 +0200
+
+    lisätty hakemisto 'stuff'
+
+ stuff/coconut.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 04a07d8988099a96a1dea4e8c7ee73bb7cdd8ba9
+Author: Reima Kuomanen <reimkuos@gmail.com>
+Date:   Sat Mar 20 19:13:28 2021 +0200
+
+    kolmas.txt luotu
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit a116de4d6ced69dcaf978268a30b0cdf80da14d7
+Author: Reima Kuomanen <reimkuos@gmail.com>
+Date:   Sat Mar 20 19:07:18 2021 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 2 ++
+ toinen.txt   | 0
+ 2 files changed, 2 insertions(+)
+
+commit 3a9dc8f1c34cb62d84671d1d8cd0735e005da520
+Author: Reima Kuomanen <reimkuos@gmail.com>
+Date:   Sat Mar 20 19:04:55 2021 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
