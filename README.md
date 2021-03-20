@@ -1,6 +1,8 @@
 # Ohjelmistotekniikka, harjoitustyö
 
-*__Viikko 1__*
+## Tehtävät
+
+### Viikko 1
 
 [komentorivi.txt](https://github.com/ReimKuos/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
 
