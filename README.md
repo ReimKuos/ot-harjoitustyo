@@ -1,8 +1,6 @@
 # Ohjelmistotekniikka, harjoitustyö
 
-# Tehtävät\n
+*__Viikko 1__*
 
-__Viikko 1__
-
-*some words might look tilted if viewed from a straight angle*
-but it otherwise should be straight
+[komentorivi.txt](https://github.com/ReimKuos/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
+[gitlog.txt](https://github.com/ReimKuos/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
