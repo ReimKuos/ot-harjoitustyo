@@ -6,7 +6,7 @@ Sovellus on peli jossa pelaaaja menee avaruusaluksella arvaruudessa ja kerää p
 
 ## Käyttöliittymäluonnos
 
-![alt text](https://github.com/ReimKuos/ot-harjoitustyo/tree/master/dokumentaatio/goodcreen.png)
+![alt text](https://github.com/ReimKuos/ot-harjoitustyo/tree/master/dokumentaatio/goodcreen.png "referenssi kartta")
 
 ## Peusversion tarjoama toiminnallisuus
 
