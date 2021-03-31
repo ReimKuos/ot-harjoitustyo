@@ -1,5 +1,5 @@
 # työaikakirjanpito
 
-| päivä | aika | mitä tein  |
+| päivä | aika (tunteina) | mitä tein  |
 | :----:|:-----| :-----|
-| 30.3. | 1 h | määrittely dokumentin tekeminen ||
+| 30.3. | 1 | määrittely dokumentin tekeminen ||
