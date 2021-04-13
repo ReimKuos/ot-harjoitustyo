@@ -8,3 +8,6 @@ laskarit/viikko2/unicafe/src/tests/__pycache__/
 
 /laskarit/viikko2/unicafe/htmlcov
 
+.coverage
+
+__pycache__
