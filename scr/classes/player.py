@@ -1,4 +1,5 @@
 import pygame
+from classes.enemies import Sharp
 
 class Player(pygame.sprite.Sprite):
 
@@ -49,3 +50,7 @@ class Player(pygame.sprite.Sprite):
         if keys[pygame.K_d]:
             self.rect.move_ip(self.speed, 0)
             self.image = self.images[1]
+        if keys[pygame.K_c]:
+            mep = self.groups()
+            mep[0].add(Sharp(self.rect[0],self.rect[1]))
+            

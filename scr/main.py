@@ -9,16 +9,8 @@ def main():
 
     pygame.init()
 
-    sprites = pygame.sprite.Group()
-
-    ui = UI(960,810)
-
-    player = Player()
-    enemy = Sharp(100,100)
-    sprites.add([player,enemy])
-
-    mainloop = MainLoop(ui,sprites)
-
+    ui = UI(500,500)
+    mainloop = MainLoop(ui)
     mainloop.start()
 
     pygame.quit()
