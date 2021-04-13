@@ -1,12 +1,28 @@
-# Ohjelmistotekniikka, harjoitustyö
+# Avaruus peli
 
-## Tehtävät
+-tällä hetkellä puuttuu
 
-### *Viikko 1*
+## Dokumentaaio
 
-[komentorivi.txt](https://github.com/ReimKuos/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
+-tällä hetkellä puuttuu
 
-[gitlog.txt](https://github.com/ReimKuos/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
+## Asennus
 
-[vaatimusmaarittely.md](https://github.com/ReimKuos/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
+1. Asenna riippuvuudet:
+
+```bash
+poetry install
+```
+
+2. Suorita vaadittavat alustustoimenpiteet komennolla:
+
+```bash
+poetry run invoke build
+```
+
+3. Käynnistä sovellus komennolla:
+
+```bash
+poetry run invoke start
+```
 
