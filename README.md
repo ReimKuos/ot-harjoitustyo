@@ -4,7 +4,7 @@
 
 ## Dokumentaaio
 
-[Tuntikirjanpito](https://github.com/ReimKuos/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
+-tämäkin puuttuu vielä
 
 ## Asennus
 
