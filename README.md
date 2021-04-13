@@ -4,7 +4,7 @@
 
 ## Dokumentaaio
 
--tällä hetkellä puuttuu
+[Tuntikirjanpito](https://github.com/ReimKuos/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 
 ## Asennus
 
@@ -27,6 +27,6 @@ poetry run invoke start
 ```
 ## Ohjeet
 
-Tällä hetkellä "peli" on hyvin simppeli sen voi avata, aloitus näytältä peliin pääsee painamalla q näppäintä ja alusta voi ohjailla WASD näppäimillä ja ampua SPACE näppäimellä, peli sulkjetaan joko ruudun yläkulmasta tai painamalla ESC näppäintä
+Tällä hetkellä "peli" on hyvin simppeli sen voi avata, aloitus näytältä peliin pääsee painamalla q näppäintä ja alusta voi ohjailla WASD näppäimillä ja ampua SPACE näppäimellä, peli suljetaan joko ruudun yläkulmasta tai painamalla ESC näppäintä.
 
 
