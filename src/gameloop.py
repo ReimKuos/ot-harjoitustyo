@@ -1,5 +1,5 @@
 import pygame
-from classes.player import Player
+from entities.player import Player
 
 class GameLoop:
 

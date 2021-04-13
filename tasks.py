@@ -8,3 +8,6 @@ def start(ctx):
 def test(ctx):
     ctx.run("pytest src")
 
+@task
+def coverage_report(ctx):
+    ctx.run("coverage html")

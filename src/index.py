@@ -1,9 +1,13 @@
 import pygame
 from random import randint
-from classes.player import Player
-from classes.enemies import Sharp
+from entities.bullets import StandardBullet
+from entities.player import Player
+from entities.enemies import Sharp
 from ui.master_ui import UI
+from ui.text_sprite import TextSprite
 from mainloop import MainLoop
+from gameloop import GameLoop
+from startloop import StartLoop
 
 def main():
 

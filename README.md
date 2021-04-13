@@ -14,10 +14,10 @@
 poetry install
 ```
 
-2. Suorita vaadittavat alustustoimenpiteet komennolla:
+2. Asenna PyGame:
 
 ```bash
-poetry run invoke build
+poetry add pygame
 ```
 
 3. Käynnistä sovellus komennolla:
@@ -25,4 +25,8 @@ poetry run invoke build
 ```bash
 poetry run invoke start
 ```
+## Ohjeet
+
+Tällä hetkellä "peli" on hyvin simppeli sen voi avata, aloitus näytältä peliin pääsee painamalla q näppäintä ja alusta voi ohjailla WASD näppäimillä ja ampua SPACE näppäimellä, peli sulkjetaan joko ruudun yläkulmasta tai painamalla ESC näppäintä
+
 

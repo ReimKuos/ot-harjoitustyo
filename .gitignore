@@ -13,3 +13,5 @@ laskarit/viikko2/unicafe/src/tests/__pycache__/
 __pycache__
 
 htmlcov
+
+.pytest_cache

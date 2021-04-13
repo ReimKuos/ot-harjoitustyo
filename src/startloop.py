@@ -1,5 +1,5 @@
 import pygame
-from classes.text_sprite import TextSprite
+from ui.text_sprite import TextSprite
 
 class StartLoop:
 
