@@ -11,7 +11,6 @@ class MainLoop:
         
         self.current_loop = StartLoop()
         self.ui = ui
-        self.cheker = 0
 
     def start(self):
 
@@ -24,10 +23,6 @@ class MainLoop:
             self.clock.tick(60)
             self.update()
             self.current_loop.increment()
-            self.cheker %= 100
-            if self.cheker == 0:
-                print("running")
-            self.cheker += 1
             self.draw()
         
 
@@ -52,7 +47,6 @@ class MainLoop:
                     self.running = False
 
                 if event.key == pygame.K_q:
-                    #placeholder for manual loop switch
                     self.loop_switch("gameloop")
 
                 if event.key == pygame.K_o:
