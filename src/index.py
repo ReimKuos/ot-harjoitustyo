@@ -1,23 +1,23 @@
+""""the main module, constructs the game"""
 import pygame
-from random import randint
-from entities.bullets import StandardBullet
-from entities.player import Player
-from entities.enemies import Sharp
 from ui.master_ui import UI
-from ui.text_sprite import TextSprite
 from mainloop import MainLoop
-from gameloop import GameLoop
-from startloop import StartLoop
+
+#IDK why pygame throws an error so a disapled no-member in pylint, this applies to other methods aswell
+#The error is given when direct pygame functions or values are called
 
 def main():
+    """The main function that creates and calls the mainloop"""
 
-    pygame.init()
+    pygame.init()# pylint: disable=no-member
 
-    ui = UI(500,500)
-    mainloop = MainLoop(ui)
+    user_interface = UI(512, 800)
+    mainloop = MainLoop(user_interface)
     mainloop.start()
 
-    pygame.quit()
+    pygame.quit()# pylint: disable=no-member
+
 
 if __name__ == "__main__":
     main()
+    
