@@ -1,3 +1,5 @@
 # Arkkitehtuuri
 
-![kuva][achitecture.png]
+![kuva][pic]
+
+[pic]:./achitecture.jpg
