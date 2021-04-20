@@ -11,11 +11,19 @@ class TestBullet(unittest.TestCase):
         self.bullet = StandardBullet(10,10,0)
 
     def test_bullet_is_not_part_of_any_groups_after_42_frames(self):
-        self.bullets.add(self.bullets)
+        self.bullets.add(self.bullet)
         for _ in range(42):
             self.bullet.update()
         self.assertEqual(self.bullet.groups(),[])
 
+    def test_bullet_is_a_part_of_group_after_32_frames(self):
+        self.bullets.add(self.bullet)
+        for _ in range(32):
+            self.bullet.update()
+        self.assertEqual(self.bullet.groups(),[self.bullets])
+
     def test_bullet_travels_forvard(self):
         self.bullet.update()
         self.assertLess(self.bullet.rect[1],10)
+
+    
