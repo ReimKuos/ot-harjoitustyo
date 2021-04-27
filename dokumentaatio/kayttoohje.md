@@ -9,9 +9,9 @@
     - SPACE valitsee valitun kohdan
     - EXIT-kohta sulkee pelin
     - START-kohta aloittaa pelin
+    - SCORE- kohta siirtyy score näytölle mistä näkee kymmenen parasta tulosta (SPACE-näppäin paluttaa käyttäjän aloitusnäytölle)
 
 -Puuttellisuudet
-    - Scores ei toimi, koska sille ei ole thty vielä näytöä, datasta kuitenkin löytyy tiedosto score.txt (se ilmestyy vasta ensimmäisen pelin jälkeen), josta voidaan löytää tulokset
     - Tällä hetkellä osoitin on hiemmä planeetta oikean kuvan puutteetn takia
 
 ## Pelissä
@@ -20,4 +20,4 @@
 - Alus ampuu SPACE-näppäimellä
 
 - Näytölle ilmestyy vihollisa, joita voi tuhota ampumalla niitä, jolloin ne antavat pisteitä
-- Jos vihollinen koskettaa pelaajaa tuhoutuu pelaaja automaattisesti, japeli siirtyy suoraan aloitusnäytölle
+- Jos vihollinen tai sen panos koskettaa pelaajaa tuhoutuu pelaaja automaattisesti, tällöin uuden pelin voi aloitta R-näppäimellä ja T-näppäimellä voi siirtyä aloitusnäytölle
