@@ -11,14 +11,14 @@ Sovellus on peli jossa pelaaaja menee avaruusaluksella arvaruudessa ja kerää p
 ## Peusversion tarjoama toiminnallisuus
 
 - aloitusnäytöllä
-    - voi joko aloittaa pelin tai mennä katselemaan huippu tuloksia
+    - [x] voi joko aloittaa pelin tai mennä katselemaan huippu tuloksia
 - pelatessa
-    - pelissä on vain yksi ikuinen taso, johon ilmestyy vihollisia kunnes pelaaja kuolee
-    - pelaaja pystyy ampumaan panoksia jotka tuhoavat vihollisia
-    - viholliset antavat pisteitä
+    - [x] pelissä on vain yksi ikuinen taso, johon ilmestyy vihollisia kunnes pelaaja kuolee
+    - [x] pelaaja pystyy ampumaan panoksia jotka tuhoavat vihollisia
+    - [x] viholliset antavat pisteitä
 - "high scores" ikkunassa
-    - pelaaja voi katsoa kymmentä suurinta tulosta
-    - pelaaja voi poistua takaisin aloitusnäytölle
+    - [x] pelaaja voi katsoa kymmentä suurinta tulosta
+    - [x] pelaaja voi poistua takaisin aloitusnäytölle
 
 ## Jatkokehitysideoita
 
