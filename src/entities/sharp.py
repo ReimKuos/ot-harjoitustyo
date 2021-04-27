@@ -14,7 +14,7 @@ class Sharp(pygame.sprite.Sprite):
         self.points = 0
 
         self.image = pygame.image.load(
-            f"data/sprites/ShipSpriteLeft.png").convert_alpha()
+            f"data/sprites/Sharp.png").convert_alpha()
         self.rect = self.image.get_rect()
 
         self.width = self.rect[2]
@@ -69,6 +69,9 @@ class Sharp(pygame.sprite.Sprite):
             self.shoot_cooldown = randint(30, 200)
 
     def calculate_bullet_speed(self, player):
+
+        if player.rect == self.rect:
+            return (0, 0)
 
         player_pos = player.get_position()
         own_pos = (self.rect[0] + self.rect[2]//2,

@@ -40,19 +40,18 @@ class Arrow(pygame.sprite.Sprite):
     def update(self, keys):
         """updates the pointers position scrolls back to zero if postion goes over 2"""
         self.move_pointer(keys)
-        self.choose_event(keys)
-
         self.pointer %= 3
+        self.choose_event(keys)
         self.rect = self.rects[self.pointer]
 
     def move_pointer(self, keys):
         """gets the input for moving the pointer"""
-        if keys[pygame.K_UP] or keys[pygame.K_w]:  # pylint: disable=no-member
+        if keys[pygame.K_UP] or keys[pygame.K_w]:
             if not self.pressed:
                 self.pointer -= 1
             self.pressed = True
 
-        elif keys[pygame.K_DOWN] or keys[pygame.K_s]:  # pylint: disable=no-member
+        elif keys[pygame.K_DOWN] or keys[pygame.K_s]:
             if not self.pressed:
                 self.pointer += 1
             self.pressed = True
@@ -62,7 +61,7 @@ class Arrow(pygame.sprite.Sprite):
 
     def choose_event(self, keys):
         """checks if space is pressed if so changes event from None to the chosen one"""
-        if keys[pygame.K_SPACE]:  # pylint: disable=no-member
+        if keys[pygame.K_SPACE]:
             self.event = self.events[self.pointer]
 
     def get_event(self):

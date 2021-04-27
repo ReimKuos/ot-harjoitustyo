@@ -11,6 +11,7 @@ class TestPlayer(unittest.TestCase):
         self.sprites = pygame.sprite.Group()
         self.screen = pygame.display.set_mode((0, 0))
         self.player = Player(self.sprites, self.bullets)
+        self.player_copy = Player(self.sprites, self.bullets)
 
     def test_player_stays_on_screen_up_and_left(self):
         # simulates key presses
@@ -59,3 +60,19 @@ class TestPlayer(unittest.TestCase):
         self.player.x_speed = 10
         self.player.limit_speed()
         self.assertLess(self.player.x_speed, 10)
+
+    def test_bullet_cooldown_is_not_0_after_shooting(self):
+        self.player.shoot()
+        self.assertGreater(self.player.bullet_cooldown,0)
+
+    def test_bullet_cooldown_does_not_go_under_0(self):
+        self.player.shoot()
+        for _ in range(1000):
+            self.player.tick_cooldowns()
+        self.assertEqual(self.player.bullet_cooldown,0)
+
+    def test_sprite_state_is_different(self):
+        self.player.x_speed = -1
+        self.player_copy.x_speed = 1
+        self.assertNotEqual(self.player.image,self.player_copy.image)
+

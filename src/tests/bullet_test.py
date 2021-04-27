@@ -1,6 +1,6 @@
 import unittest
 import pygame
-from entities.bullets import StandardBullet
+from shootables.bullets import StandardBullet
 
 
 class TestBullet(unittest.TestCase):

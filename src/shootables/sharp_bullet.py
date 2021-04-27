@@ -12,7 +12,7 @@ class SharpBullet(pygame.sprite.Sprite):
         super().__init__()
 
         self.image = pygame.image.load(
-            "data/sprites/Bullet_MK1.png").convert_alpha()
+            "data/sprites/BulletSharp.png").convert_alpha()
         self.rect = self.image.get_rect()
 
         self.rect.move_ip(x_pos - self.rect[2]//2, y_pos - self.rect[3]//2)
