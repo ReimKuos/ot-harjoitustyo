@@ -4,6 +4,7 @@ import pygame
 
 class Arrow(pygame.sprite.Sprite):
     """currently has a wrong sprite, contains the methods for drawing and manuevering the start menu"""
+
     def __init__(self, x_position: int, y_position: int):
 
         super().__init__()
@@ -46,12 +47,12 @@ class Arrow(pygame.sprite.Sprite):
 
     def move_pointer(self, keys):
         """gets the input for moving the pointer"""
-        if keys[pygame.K_UP] or keys[pygame.K_w]:# pylint: disable=no-member
+        if keys[pygame.K_UP] or keys[pygame.K_w]:  # pylint: disable=no-member
             if not self.pressed:
                 self.pointer -= 1
             self.pressed = True
 
-        elif keys[pygame.K_DOWN] or keys[pygame.K_s]:# pylint: disable=no-member
+        elif keys[pygame.K_DOWN] or keys[pygame.K_s]:  # pylint: disable=no-member
             if not self.pressed:
                 self.pointer += 1
             self.pressed = True
@@ -61,7 +62,7 @@ class Arrow(pygame.sprite.Sprite):
 
     def choose_event(self, keys):
         """checks if space is pressed if so changes event from None to the chosen one"""
-        if keys[pygame.K_SPACE]:# pylint: disable=no-member
+        if keys[pygame.K_SPACE]:  # pylint: disable=no-member
             self.event = self.events[self.pointer]
 
     def get_event(self):

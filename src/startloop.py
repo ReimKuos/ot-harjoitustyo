@@ -7,6 +7,7 @@ from entities.sprite_text import TextSprite
 
 class StartLoop:
     """loopclass used in the startmenu, called by the Mainloop"""
+
     def __init__(self):
 
         self.sprites = pygame.sprite.Group()
@@ -32,7 +33,7 @@ class StartLoop:
         keys = pygame.key.get_pressed()
 
         # A non-permanent fix
-        if self.keysup and keys[pygame.K_SPACE]: # pylint: disable=no-member
+        if self.keysup and keys[pygame.K_SPACE]:  # pylint: disable=no-member
             return None
         self.keysup = False
 

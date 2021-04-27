@@ -1,6 +1,7 @@
 """"has the class bullet that works whit the player"""
 import pygame
 
+
 class StandardBullet(pygame.sprite.Sprite):
     """A standart bullet that works whit the player, travels forward and destroys enemies"""
 

@@ -1,7 +1,7 @@
 import unittest
 import pygame
 from entities.player import Player
-from entities.bullets import StandardBullet
+from shootables.bullets import StandardBullet
 
 
 class TestPlayer(unittest.TestCase):
@@ -13,7 +13,7 @@ class TestPlayer(unittest.TestCase):
         self.player = Player(self.sprites, self.bullets)
 
     def test_player_stays_on_screen_up_and_left(self):
-        #simulates key presses
+        # simulates key presses
         keys = {
             pygame.K_UP: True,
             pygame.K_LEFT: True,
@@ -27,10 +27,10 @@ class TestPlayer(unittest.TestCase):
         }
         for _ in range(300):
             self.player.update(keys)
-        self.assertEqual(self.player.rect, pygame.Rect(0,0,32,32))
+        self.assertEqual(self.player.rect, pygame.Rect(0, 0, 32, 32))
 
     def test_player_stays_on_screen_down_and_right(self):
-        #simulates key presses
+        # simulates key presses
         keys = {
             pygame.K_UP: False,
             pygame.K_LEFT: False,
@@ -53,7 +53,7 @@ class TestPlayer(unittest.TestCase):
 
     def test_player_limit_speed_speed_stays_0_if_0(self):
         self.player.limit_speed()
-        self.assertEqual((self.player.x_speed, self.player.y_speed),(0,0))
+        self.assertEqual((self.player.x_speed, self.player.y_speed), (0, 0))
 
     def test_player_limit_speed_speed_drops_if_over_the_limit(self):
         self.player.x_speed = 10

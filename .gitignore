@@ -16,4 +16,4 @@ htmlcov
 
 .pytest_cache
 
-scores.txt
+scores.db

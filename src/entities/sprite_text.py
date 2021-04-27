@@ -4,14 +4,17 @@ import pygame
 
 class TextSprite(pygame.sprite.Sprite):
     """a child class of a pygame Sprite, makes sprite object from a string"""
-    def __init__(self, text: str, x_pos: int, y_pos: int):
+
+    def __init__(self, text: str, x_pos: int, y_pos: int, centered=False):
         super().__init__()
         color = (120, 120, 255)
         font = pygame.font.SysFont("courier", 32, bold=True, italic=False)
         self.image = font.render(text, True, color)
         self.rect = self.image.get_rect()
-
-        self.rect.move_ip(x_pos, y_pos)
+        if centered:
+            self.rect.move_ip(x_pos - self.rect[2]//2, y_pos - self.rect[3]//2)
+        else:
+            self.rect.move_ip(x_pos, y_pos)
         self.lifetime = 1
 
     def update(self):

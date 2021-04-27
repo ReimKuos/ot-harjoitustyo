@@ -1,7 +1,6 @@
 """cointains the player class that is used in the gameloop to play"""
 import pygame
-from entities.bullets import StandardBullet
-
+from shootables.bullets import StandardBullet
 
 
 class Player(pygame.sprite.Sprite):
@@ -12,7 +11,7 @@ class Player(pygame.sprite.Sprite):
         super().__init__()
 
         self.bullets = bullets
-        self.sprites = sprites 
+        self.sprites = sprites
 
         self.images = [
             pygame.image.load(
@@ -36,7 +35,10 @@ class Player(pygame.sprite.Sprite):
         self.bullet_cooldown = 0
 
     def update(self, keys):
-        """calculates the next postion of the player based on key presses and increments cooldowns"""
+        """
+        calculates the next postion of the player
+        based on key presses and increments cooldowns
+        """
 
         self.input_check(keys)
         self.limit_speed()
@@ -77,16 +79,16 @@ class Player(pygame.sprite.Sprite):
     def input_check(self, keys):
         """takes input and makes movement based on that"""
 
-        if keys[pygame.K_UP] or keys[pygame.K_w]: # pylint: disable=no-member
+        if keys[pygame.K_UP] or keys[pygame.K_w]:  # pylint: disable=no-member
             self.y_speed -= 0.5
-        if keys[pygame.K_DOWN] or keys[pygame.K_s]: # pylint: disable=no-member
+        if keys[pygame.K_DOWN] or keys[pygame.K_s]:  # pylint: disable=no-member
             self.y_speed += 0.5
-        if keys[pygame.K_LEFT] or keys[pygame.K_a]: # pylint: disable=no-member
+        if keys[pygame.K_LEFT] or keys[pygame.K_a]:  # pylint: disable=no-member
             self.x_speed -= 0.5
-        if keys[pygame.K_RIGHT] or keys[pygame.K_d]: # pylint: disable=no-member
+        if keys[pygame.K_RIGHT] or keys[pygame.K_d]:  # pylint: disable=no-member
             self.x_speed += 0.5
 
-        if keys[pygame.K_SPACE]: # pylint: disable=no-member
+        if keys[pygame.K_SPACE]:  # pylint: disable=no-member
             self.shoot()
 
     def limit_speed(self):
@@ -116,3 +118,10 @@ class Player(pygame.sprite.Sprite):
             self.bullets.add(bullet)
             self.sprites.add(bullet)
             self.bullet_cooldown = 10
+
+    def get_position(self):
+        """
+        retrun the coordinates of the players center position,
+        which are colculated based on the players rect attribute
+        """
+        return (self.rect[0] + self.rect[2]//2, self.rect[1] + self.rect[3]//2)

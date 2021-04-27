@@ -2,6 +2,7 @@
 import pygame
 from startloop import StartLoop
 from gameloop import GameLoop
+from scoreloop import ScoreLoop
 
 
 class MainLoop:
@@ -47,12 +48,12 @@ class MainLoop:
 
         for event in pygame.event.get():
 
-            if event.type == pygame.QUIT:# pylint: disable=no-member
+            if event.type == pygame.QUIT:  # pylint: disable=no-member
                 self.running = False
 
-            if event.type == pygame.KEYDOWN:# pylint: disable=no-member
+            if event.type == pygame.KEYDOWN:  # pylint: disable=no-member
 
-                if event.key == pygame.K_ESCAPE:# pylint: disable=no-member
+                if event.key == pygame.K_ESCAPE:  # pylint: disable=no-member
                     self.running = False
 
     def loop_switch(self, next_loop: str):
@@ -65,6 +66,10 @@ class MainLoop:
         elif next_loop == "startloop":
 
             self.current_loop = StartLoop()
+
+        elif next_loop == "scoreloop":
+
+            self.current_loop = ScoreLoop()
 
         elif next_loop == "exit":
 
