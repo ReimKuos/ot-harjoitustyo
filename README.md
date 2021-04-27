@@ -6,6 +6,10 @@ Sovellus on peli, jossa lennetään avaruudessa, väistelään vihollisia ja ker
 
 Sovelluksen toiminta on testattu Python-versiolla `3.8.5`
 
+## Release 1
+
+- [1.0.0](.)
+
 ## Dokumentaatio
 
 - [Käyttöohje](./dokumentaatio/kayttoohje.md)
