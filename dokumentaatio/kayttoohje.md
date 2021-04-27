@@ -11,7 +11,7 @@
     - START-kohta aloittaa pelin
     - SCORE- kohta siirtyy score näytölle mistä näkee kymmenen parasta tulosta (SPACE-näppäin paluttaa käyttäjän aloitusnäytölle)
 
--Puuttellisuudet
+- Puuttellisuudet
     - Tällä hetkellä osoitin on hiemmä planeetta oikean kuvan puutteetn takia
 
 ## Pelissä
