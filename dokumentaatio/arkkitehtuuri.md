@@ -4,4 +4,4 @@
 ![sekvenssi][sekvenssi]
 
 [pic]:./achitecture.jpg
-[sekvenssi]:./Life cycle of gameloop.png
+[sekvenssi]:./Life_cycle_of_gameloop.png
