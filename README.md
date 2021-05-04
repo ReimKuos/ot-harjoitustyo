@@ -9,6 +9,7 @@ Sovelluksen toiminta on testattu Python-versiolla `3.8.5`
 ## Release 1
 
 - [1.0.0](https://github.com/ReimKuos/ot-harjoitustyo/releases/tag/viikko5)
+- [2.0.0](https://github.com/ReimKuos/ot-harjoitustyo/releases/tag/2)
 
 ## Dokumentaatio
 
