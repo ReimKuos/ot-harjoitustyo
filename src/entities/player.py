@@ -1,4 +1,3 @@
-"""cointains the player class that is used in the gameloop to play"""
 import pygame
 from shootables.bullets import StandardBullet
 
@@ -7,6 +6,13 @@ class Player(pygame.sprite.Sprite):
     """the player class that holds the postion, takes input, handles update, and holds sprites"""
 
     def __init__(self, bullets, sprites):
+        """
+        The constructor of the player entity
+
+        Args:
+            bullets: sprite group where bullets are put
+            sprites: sprite group where bullet sprites are put
+        """
 
         super().__init__()
 
@@ -38,6 +44,9 @@ class Player(pygame.sprite.Sprite):
         """
         calculates the next postion of the player
         based on key presses and increments cooldowns
+
+        Args:
+            dictionary of all keystates
         """
 
         self.input_check(keys)
@@ -79,16 +88,16 @@ class Player(pygame.sprite.Sprite):
     def input_check(self, keys):
         """takes input and makes movement based on that"""
 
-        if keys[pygame.K_UP] or keys[pygame.K_w]:  # pylint: disable=no-member
+        if keys[pygame.K_UP] or keys[pygame.K_w]:
             self.y_speed -= 0.5
-        if keys[pygame.K_DOWN] or keys[pygame.K_s]:  # pylint: disable=no-member
+        if keys[pygame.K_DOWN] or keys[pygame.K_s]:
             self.y_speed += 0.5
-        if keys[pygame.K_LEFT] or keys[pygame.K_a]:  # pylint: disable=no-member
+        if keys[pygame.K_LEFT] or keys[pygame.K_a]:
             self.x_speed -= 0.5
-        if keys[pygame.K_RIGHT] or keys[pygame.K_d]:  # pylint: disable=no-member
+        if keys[pygame.K_RIGHT] or keys[pygame.K_d]:
             self.x_speed += 0.5
 
-        if keys[pygame.K_SPACE]:  # pylint: disable=no-member
+        if keys[pygame.K_SPACE]:
             self.shoot()
 
     def limit_speed(self):

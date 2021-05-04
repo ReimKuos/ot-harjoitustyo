@@ -6,7 +6,10 @@ import sqlite3
 
 def add_score(score):
     """
-    cnnects to the scores database and inserts the value of the parameter to the database
+    connects to the scores database and inserts the value of the parameter to the database
+
+    Args:
+        score: the value that will be added to the database
     """
 
     scores = sqlite3.connect("data/scores.db")

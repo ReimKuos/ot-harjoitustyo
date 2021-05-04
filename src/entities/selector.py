@@ -21,7 +21,7 @@ class Arrow(pygame.sprite.Sprite):
         self.pressed = False
 
         self.image = pygame.image.load(
-            "data/sprites/PlanetSmol1.png").convert_alpha()
+            "data/sprites/ArrowSprite.png").convert_alpha()
         self.rect = self.image.get_rect()
 
         self.width, self.length = self.rect[2], self.rect[3]

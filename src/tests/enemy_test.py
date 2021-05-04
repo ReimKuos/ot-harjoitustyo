@@ -28,5 +28,6 @@ class TestSharp(unittest.TestCase):
 
     def test_bullet_speed_returned_is_zero_if_player_atop_enemy(self):
         self.sharp = Sharp(256, 780, self.bullets, self.sprites)
-        speed = self.sharp.calculate_bullet_speed(Player(self.bullets, self.sprites))
-        self.assertEqual(speed ,(0, 0))
+        speed = self.sharp.calculate_bullet_speed(
+            Player(self.bullets, self.sprites))
+        self.assertEqual(speed, (0, 0))

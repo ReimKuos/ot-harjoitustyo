@@ -9,6 +9,13 @@ class MainLoop:
     """the mainloop that limits frames and handles 'subloops'"""
 
     def __init__(self, user_inteface):
+        """
+        The constructor of mainloop, builds and assigns necessary
+        objects for the function of the loop
+
+        Args:
+            user_interface: UI that the mailoop sends drawable sprites to
+        """
 
         self.clock = pygame.time.Clock()
         self.running = True
@@ -17,12 +24,17 @@ class MainLoop:
         self.user_inteface = user_inteface
 
     def start(self):
-        """method that can be called to satrt the mainloop"""
+        """
+        method that can be called to satrt the mainloop
+        """
 
         self.mainloop()
 
     def mainloop(self):
-        """the mainloop of the mainloop, calls all nesessary methods 60 a second"""
+        """
+        the mainloop of the mainloop, calls all nesessary methods 60 a second,
+        if possible
+        """
 
         while self.running:
 
@@ -57,7 +69,12 @@ class MainLoop:
                     self.running = False
 
     def loop_switch(self, next_loop: str):
-        """this function chooses the next current_loop based on itäs input"""
+        """
+        this function chooses the next current_loop based on it's input
+
+        Args:
+            next_loop: string that tells the mainloop the next subloop
+        """
 
         if next_loop == "gameloop":
 

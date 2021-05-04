@@ -8,7 +8,10 @@ import sqlite3
 def fetch_scores():
     """
     this function simply connects to the scores.db database and queries it for 10 highest scores,
-    cleans the retrunned list only and then it retruns them as a list
+    cleans the returned list from the query and then it retruns the list
+
+    Retrun:
+        the list containing top 10 scores in order
     """
 
     scores = sqlite3.connect("data/scores.db")

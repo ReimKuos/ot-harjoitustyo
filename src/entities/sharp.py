@@ -1,38 +1,43 @@
 """module that has enemy classes"""
 from random import randint
 from math import sqrt
+from entities.enemy import Enemy
 from shootables.sharp_bullet import SharpBullet
-import pygame
 
 
-class Sharp(pygame.sprite.Sprite):
-    """basic enemy class, bounces around the screen kills the player if touched"""
+class Sharp(Enemy):
+    """
+    basic enemy class, bounces around the screen kills the player if touched,
+    also shoot dangerous projectiles
+    """
 
     def __init__(self, x_pos: int, y_pos: int, bullet_list, sprite_group):
-        super().__init__()
+        """
+        constructor for the enemy class
 
-        self.points = 0
+        Args:
+            x_pos: horizontal postion of enemy
+            y_pos: vertical postion of enemy
+            sprite_group: a sprite group where enemy resides
+            bullet_list: a sprite group where bullets are stored
+        """
 
-        self.image = pygame.image.load(
-            f"data/sprites/Sharp.png").convert_alpha()
-        self.rect = self.image.get_rect()
-
-        self.width = self.rect[2]
-        self.length = self.rect[3]
-
-        self.rect.move_ip(x_pos - self.width//2, y_pos - self.length//2)
-
-        self.x_speed = randint(-3, 3)
-        self.y_speed = randint(-3, 3)
+        super().__init__(x_pos, y_pos, "Sharp")
 
         self.shoot_cooldown = randint(60, 200)
-        self.points = 200
 
-        self.enemy_bullets = bullet_list
         self.sprite_group = sprite_group
+        self.enemy_bullets = bullet_list
 
     def update(self, player):
-        """updates the enemies position, changes corresponding speeds direction if wall is hit"""
+        """
+        updates the enemies position, changes corresponding
+        speeds direction if wall is hit, also makes enemy shoot
+        the player if possible
+
+        Args:
+            player: 
+        """
 
         self.rect.move_ip(self.x_speed, self.y_speed)
         self.shoot(player)
@@ -45,13 +50,16 @@ class Sharp(pygame.sprite.Sprite):
 
     def points(self):
         """retruns points the enemy gives, checked when enemy is killed"""
-        return self.points
+        return 200
 
     def shoot(self, player):
         """
         The shooting mwthod of the class if cooldown is on, it decrements it
         otherwise it calculates the speed of the bullet and creates a bullet
         instance that is added into all of the sharps groups
+
+        Args:
+            player: the user entity
         """
 
         if self.shoot_cooldown > 0:
@@ -69,6 +77,13 @@ class Sharp(pygame.sprite.Sprite):
             self.shoot_cooldown = randint(30, 200)
 
     def calculate_bullet_speed(self, player):
+        """
+        calculates the speed vector for a shot bullet that
+        has the lenght of 3
+
+        Args:
+            player: the user entity
+        """
 
         if player.rect == self.rect:
             return (0, 0)
@@ -86,7 +101,3 @@ class Sharp(pygame.sprite.Sprite):
         y_speed = 3 * normalizer * diagonal_diff
 
         return (x_speed, y_speed)
-
-
-if __name__ == "__main__":
-    pass

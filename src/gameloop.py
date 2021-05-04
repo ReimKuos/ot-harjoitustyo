@@ -1,6 +1,7 @@
 """"this module is has the mainloop that calls all other loops in the app"""
 from random import randint
 import pygame
+from entities.follower import Follower
 from entities.player import Player
 from entities.sharp import Sharp
 from entities.sprite_text import TextSprite
@@ -9,9 +10,14 @@ from score_adder import add_score
 
 class GameLoop:
 
-    """loop that is incremented if game is playing"""
+    """loop that is incremented if game is being played"""
 
     def __init__(self):
+        
+        """
+        constructor of the gameloop, sets up all
+        the necessary entities for the gameloop to run
+        """
 
         self.enemies = pygame.sprite.Group()
         self.enemy_bullets = pygame.sprite.Group()
@@ -54,11 +60,17 @@ class GameLoop:
         return None
 
     def enemy_adder(self):
-        """adds enemies to the field if there are space for them"""
+        """
+        adds enemies to the field if there are space for them
+        """
 
         if len(self.enemies.sprites()) < 5 + self.score//10000:
-            enemy = Sharp(randint(30, 482), randint(30, 590),
-                          self.enemy_bullets, self.sprites)
+            if randint(0, 1) == 1:
+                enemy = Sharp(randint(30, 482), randint(30, 590),
+                              self.enemy_bullets, self.sprites)
+            else:
+                enemy = Follower(randint(30, 482), randint(30, 590))
+
             self.enemies.add(enemy)
             self.sprites.add(enemy)
 
@@ -68,7 +80,7 @@ class GameLoop:
         dead_enemies = pygame.sprite.groupcollide(
             self.enemies, self.bullets, dokilla=True, dokillb=True)
         for enemy in dead_enemies:
-            self.score += enemy.points
+            self.score += enemy.points()
 
         if pygame.sprite.spritecollideany(self.player, self.enemies) is not None:
             self.player.kill()
@@ -77,7 +89,13 @@ class GameLoop:
             self.player.kill()
 
     def get_sprites(self):
-        """retrun the current sprites that are alive"""
+        """
+        retrun the current sprites that are alive
+
+        Returns:
+            returns the sprite group containing all
+            the sprites that need to be drawn
+        """
 
         return self.sprites
 
@@ -93,6 +111,7 @@ class GameLoop:
         self.sprites.add(text1, text2)
 
     def end_game(self):
+        """adds the score to the database and kills the current gameloop"""
 
         add_score(self.score)
         self.sprites.add(

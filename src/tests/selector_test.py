@@ -44,4 +44,3 @@ class TestArrow(unittest.TestCase):
         }
         self.arrow.update(keys)
         self.assertEqual(self.arrow.get_event(), "exit")
-
