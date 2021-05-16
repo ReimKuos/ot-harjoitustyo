@@ -12,7 +12,7 @@ Ohjelmaa on tetsattu automatisoiduilla luokka testeillä sekä manuallisilla jä
 
 Testattavien asioiden testuskattavuus on 44%
 
-
+![kattavuus][pic]
 
 # Järjestelmä testaus
 
@@ -30,3 +30,5 @@ Sovellusta on testattu käytännössä määrittely dokumetin toimintojen mukais
 
  - sovellus ei anna tialnteeseen sopivia virheilmoituksia, sillä niitä ei ole määritelty
  - Follower- tyypin viholliset välillä jäävät jumiin yhdelle linjalle, jossa ne liikkuvat vain ylös alas suunnassa
+
+[pic]:./coveragePic.png
