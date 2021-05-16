@@ -33,7 +33,7 @@ class StartLoop:
         keys = pygame.key.get_pressed()
 
         # A non-permanent fix
-        if self.keysup and keys[pygame.K_SPACE]:  # pylint: disable=no-member
+        if self.keysup and keys[pygame.K_SPACE]:
             return None
         self.keysup = False
 

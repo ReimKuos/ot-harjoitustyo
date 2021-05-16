@@ -1,4 +1,14 @@
-# Käyttöohje
+# Asennus ja Käyttöohje
+
+## Asennus
+
+### Tarvittavat kirjastot
+
+Standardi kirjastojen lisäksi sovellus hyödyntää pygame- kirjastoa tämän saa asennettua komennolla:
+
+```bash
+pip install pygame
+```
 
 ## Yleistä
 - Pelin voi sulkea aina ESC-näppäimellä tai ruudun yläkulmasta

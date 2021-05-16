@@ -13,7 +13,6 @@ class GameLoop:
     """loop that is incremented if game is being played"""
 
     def __init__(self):
-        
         """
         constructor of the gameloop, sets up all
         the necessary entities for the gameloop to run

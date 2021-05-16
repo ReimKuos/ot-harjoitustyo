@@ -5,7 +5,7 @@ def database_init():
     """
     creates a database for the scores if one does not exist yet
     """
-    
+
     database = sqlite3.connect("data/scores.db")
     try:
         database.execute(
