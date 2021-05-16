@@ -10,6 +10,20 @@ Standardi kirjastojen lisäksi sovellus hyödyntää pygame- kirjastoa tämän s
 pip install pygame
 ```
 
+### Ohjelmiston asennus
+
+Riippuvuudet saadaan asennettua komennolla:
+
+```bash
+poetry install
+```
+
+Ja peli saadaan tämän jälkeen Käynnistettyä komennolla:
+
+```bash
+poetry run invoke start
+```
+
 ## Yleistä
 - Pelin voi sulkea aina ESC-näppäimellä tai ruudun yläkulmasta
 
@@ -31,3 +45,24 @@ pip install pygame
 
 - Näytölle ilmestyy vihollisa, joita voi tuhota ampumalla niitä, jolloin ne antavat pisteitä
 - Jos vihollinen tai sen panos koskettaa pelaajaa tuhoutuu pelaaja automaattisesti, tällöin uuden pelin voi aloitta R-näppäimellä ja T-näppäimellä voi siirtyä aloitusnäytölle
+
+## Muut komentolinjan komennot
+
+Testien suoritus tapahtuu komennolla 
+
+```bash
+poetry run invoke test
+```
+
+Tetsikattavuus saadaan komennolla (hakemistona _htmlcov_)
+
+```bash
+poetry run invoke test
+```
+
+Pylint- tarkistus
+
+```bash
+poetry run invoke lint
+```
+
