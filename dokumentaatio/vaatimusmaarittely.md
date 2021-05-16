@@ -20,11 +20,3 @@ Sovellus on peli jossa pelaaaja menee avaruusaluksella arvaruudessa ja kerää p
     - [x] pelaaja voi katsoa kymmentä suurinta tulosta
     - [x] pelaaja voi poistua takaisin aloitusnäytölle
 
-## Jatkokehitysideoita
-
-- musiikin lisääminen
-- "pomojen" lisääminen
-- asetusten muokkaus mahdollisuus
-- ei ikuisia tasoja
-    - eri tasoja joissa on erilaisia vihollisia
-    - tasojen loppuun päästyä peli alkaa, mutta pisteet säilytetään ja vihollisia vahvistetaan 
