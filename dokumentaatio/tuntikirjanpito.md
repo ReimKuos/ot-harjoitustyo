@@ -10,4 +10,4 @@
 | 27.4. | 8| koodautsa, tärkeimmin tietokannan asettelu ja testien tekemistä|
 | 4.3.| 0.3| parannettu luokkakaavio |
 | 4.3.  | 5| vihollisluokkien putsauta, sekä uuden rakentaminen, tehty uusi grafiikka|
-
+|16.5.| 4| lopullisten dokumentaatioiden tekeminen|
