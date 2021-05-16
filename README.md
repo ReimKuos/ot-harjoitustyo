@@ -20,58 +20,18 @@ Sovelluksen toiminta on testattu Python-versiolla `3.8.5`
 
 ## Asennus
 
-1. Asenna riippuvuudet komennolla:
+Riippuvuuksien asentaminen tapahtuu komennolla:
 
 ```bash
 poetry install
 ```
 
-2. Suorita vaadittavat alustustoimenpiteet komennolla:
-
-```bash
-poetry run invoke build
-```
-
-3. Käynnistä sovellus komennolla:
+Ja sovelluksen käynnistäminen komennolla:
 
 ```bash
 poetry run invoke start
 ```
+Tarkempia ohjeita komentoriville sekä sovelluksen toiminnalle löytyy käyttöohjeista 
 
-## Komentorivitoiminnot
-
-### Ohjelman suorittaminen
-
-Ohjelman pystyy suorittamaan komennolla:
-
-```bash
-poetry run invoke start
-```
-
-### Testaus
-
-Testit suoritetaan komennolla:
-
-```bash
-poetry run invoke test
-```
-
-### Testikattavuus
-
-Testikattavuusraportin voi generoida komennolla:
-
-```bash
-poetry run invoke coverage-report
-```
-
-Raportti generoituu _htmlcov_-hakemistoon.
-
-### Pylint
-
-Tiedoston [.pylintrc](./.pylintrc) määrittelemät tarkistukset voi suorittaa komennolla:
-
-```bash
-poetry run invoke lint
-```
 
 
